@@ -3,15 +3,15 @@ import classes from "../styles/Home.module.css";
 import Image from "next/image";
 import BackImage from "../../public/img/bg1.jpg";
 import Half from "../../public/img/half.jpg";
+import Section from '../../components/section1/section'
 
 export default function Home() {
   return (
     <div className={classes.home}>
+    <div>
       <Image
         className={classes.img}
         src={Half}
-        width={900}
-        height={750}
         alt="half"
       />
       <div className={classes.mini_con}>
@@ -31,10 +31,10 @@ export default function Home() {
           </Link>
           </div>
         </div>
-        <div className={classes.img_con}>
-          <Image quality={60} src={BackImage} alt="back"  />
-        </div>
+        <div className={classes.img_con} />
       </div>
+      </div>
+      <Section />
     </div>
   );
 }

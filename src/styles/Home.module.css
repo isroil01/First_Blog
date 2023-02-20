@@ -1,35 +1,47 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap");
-.home {
+
+.img{
+  width: 50vw;
+  height: 85vh;
 }
+
 .mini_con {
-  width: 100%;
-  min-height: 600px;
+  width: 90%;
+  min-height: 750px;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 45%;
+  right: 0;
+  transform: translateY(-50%);
   display: flex;
   justify-content: center;
   align-items: center;
 }
+@media screen and (max-width:1980px) {
+  .img{
+    width: 900px;
+    height: 90vh;
+  }
+  .mini_con{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
 .img_con {
-  position: relative;
-  left: 10%;
-  width: 750px;
-  height: 600px;
-}
-.img_con img {
-  width: 100%;
-  height: 100%;
+   background:  url('../../public/img/bg3.jpeg') ;
+  background-size: cover;
   border-radius: 10px;
+  min-width: 850px;
+  height: 740px;
 }
+
 .text_con {
   position: absolute;
+  margin-left: -40%;
   z-index: 5;
-  left: 20%;
   border-radius: 10px;
-  width: 580px;
-  height: 550px;
+  width: 590px;
+  min-height: 650px;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -90,50 +102,56 @@
   background-color: #fe9344;
 }
 @media screen and (max-width: 969px) {
+  .mini_con{
+    width: 100%;
+  }
   .img_con {
     position: relative;
     left: 0;
   }
   .text_con {
     position: absolute;
-    left: 45%;
-    transform: translateX(-60%);
+    margin-left: -20%;
   }
 }
-@media screen and (max-width: 969px) {
+@media screen and (max-width: 1063px) {
   .img {
     width: 100%;
   }
 }
 @media screen and (max-width: 869px) {
-  .home {
-    overflow-x: hidden;
-  }
-  .img {
-    object-fit: cover;
-    width: 110%;
-  }
   .mini_con{
-    background-color: blue;
-    display: flex;
-    flex-direction: column-reverse;
-    
-  }
-  .text_con{
-    position: relative;
-    
-    max-width: 500px;
-    height: auto;
-    border-radius: 0;
+    width: 100%;
+    height: 90%;
+    background: linear-gradient(0deg,rgba(0,0,0,0.1),rgba(0,0,0,0.8),rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('../../public/img/bg3.jpeg') ;
+  background-size: cover;
+  background-position: right;
+  border-radius: 0;
   }
   .img_con{
-    position: relative;
-    
-    max-width: 500px;
-    height: 300px;
-    border-radius: 0;
+   display: none;
   }
-  .img_con img{
-    border-radius: 0;
+  .text_con{
+   position: initial;
+   margin-left: 0%;
+  width: 70%;
+  height: 200px;
+    
+  }
+}
+@media screen and (max-width: 869px){
+  .btn_con{
+    display: flex;
+    flex-direction: column;
+  }
+  .btn_con a{
+    margin: 10px;
+  }
+  .logIn{
+    width: 100px;
+    text-align: center;
+  }
+  .read{
+    text-align: center;
   }
 }
