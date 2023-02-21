@@ -2,11 +2,13 @@
     padding: 10px;
     margin-top: 80px;
     display: flex;
+    flex-wrap: wrap;
 }
 .box_1{
     justify-content: center;
-    flex: 2;
+    flex-basis: 60%;
     display: flex;
+    flex-wrap: wrap;
 }
 .card_1{
     border-radius: 30px;
@@ -30,10 +32,116 @@
 .date{
     border-top: 1px solid rgba(0, 0, 0, 0.339);
     text-align: center;
-    padding: 10px;
+    height: 10%;
+    padding: 5px;
+}
+.btn{
+    background-color: #fe9344;
+    display: inline-block;
+    padding: 8px 30px;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-width: 0;
+    border-radius: 20px;
+    border: 1px solid #fe9344;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+.box_2{
+    flex-basis:40%;
+}
+.founder_box{
+    text-align: center;
+}
+.founder{
+    border: 1px solid #fe9344;
+    display: inline-block;
+    padding: 5px 25px;
+    font-size: 18px;
+    border-radius: 30px;
+    color: #fe9344;
+    margin-bottom: 20px;
+}
+.founder_desc{
+    font-size: 16px;
+}
+.founder_desc h2{
+    color: #fe9344;
+    text-transform: uppercase;
+}
+.founder_icon{
+    text-align: center;
+}
+.founder_icon a{
+    text-decoration: none;
+    color: #fe9344;
+    margin: 5px;
+    padding: 5px 10px;
+    font-size: 30px;
+    cursor: pointer;
 }
 
-.box_2{
-    flex:1;
-    background-color: red;
+.recent_box h1{
+    font-size: 1.5rem;
+    font-weight: 500;
+    border: 1px solid #fe9344;
+    display: inline-block;
+    padding: 5px 25px;
+    font-size: 18px;
+    border-radius: 30px;
+    color: #fe9344;
 }
+.recent_card_box{
+    display: flex;
+    margin: 20px 0;
+    
+}
+.recent_card_tex{
+    padding: 5px;
+}
+.recent_card_box h2{
+    margin: 4px 10px;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+@media screen and (max-width: 1481px) {
+    .section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .box_2{
+        margin-top: 150px;
+        width: 80%;
+    }
+}
+@media screen and (max-width: 854px) {
+    
+    .card_1{
+        max-width: 500px;
+    }
+}
+@media screen and (max-width: 704px) {
+   .box_2{
+    width: 100%;
+   }
+}
+@media screen and (max-width: 547px) {
+    .recent_card_box{
+        display: block;
+    }
+ }
+ @media screen and (max-width: 432px) {
+    .card_1 h1{
+        font-size: 1.5rem;
+    }
+    .recent_box h2{
+        margin: 0;
+    }
+    .card_1{
+        margin: 10px 0;
+    }
+ }

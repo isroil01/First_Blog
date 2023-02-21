@@ -19,7 +19,19 @@ const Section = () => {
             title: 'What is the difference between javascript and typescript?',
             desc: 'what are the benefites of typescript Vs javascript',
             image: Type
-         }
+         },
+         {
+            id: '2',
+            title: 'What is the difference between javascript and typescript?',
+            desc: 'what are the benefites of typescript Vs javascript',
+            image: Type
+         },
+         {
+            id: '1',
+            title: 'Do You want to learn  JavaScript?',
+            desc: 'javascript is one fo the best and popular language.Javascript mainly used for web development',
+            image: Java
+        }
     ]
   return (
     <div className={classes.section}>
@@ -31,6 +43,7 @@ const Section = () => {
                  <div className={classes.card_box_2}>
                     <h1>{item.title}</h1>
                     <p>{item.desc}</p>
+                    <Link className={classes.btn} href='/'>Read more</Link>
                  </div>
                  <div className={classes.date}>
                   September 23, 2022
@@ -65,7 +78,21 @@ const Section = () => {
                 </div>
             </div>
             <div className={classes.recent_box}>
-                <h2>Recent posts</h2>
+                <h1>Recent posts</h1>
+                <div className={classes.recent_card}>
+                    {
+                        DUMMY_DATA.map((item) =>
+                        <div className={classes.recent_card_box} key={item.id}>
+                            <div className={classes.recent_card_img}>
+                                <Image width={200} height={100} src={item.image} alt='recent' />
+                            </div>
+                            <div className={classes.recent_card_text}>
+                                <h2>{item.desc}</h2>
+                            </div>
+                        </div>
+                        )
+                    }
+                </div>
             </div>
         </div>
     </div>
