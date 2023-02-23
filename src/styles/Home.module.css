@@ -1,51 +1,41 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap");
 
-.img{
-  width: 50vw;
-  height: 85vh;
-}
 
+.inner_home{
+  background-size:  cover;
+  background-color: #fe9344;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+}
 .mini_con {
-  width: 90%;
+  width: 100%;
   min-height: 750px;
-  position: absolute;
-  top: 45%;
-  right: 0;
-  transform: translateY(-50%);
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-@media screen and (max-width:1980px) {
-  .img{
-    width: 900px;
-    height: 90vh;
-  }
-  .mini_con{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-}
+
 .img_con {
    background:  url('../../public/img/bg3.jpeg') ;
   background-size: cover;
   border-radius: 10px;
   min-width: 850px;
-  height: 740px;
+  height: 640px;
 }
 
 .text_con {
   position: absolute;
-  margin-left: -40%;
+  margin-left: -30%;
   z-index: 5;
   border-radius: 10px;
   width: 590px;
-  min-height: 650px;
+  min-height: 550px;
   background-color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   padding: 0px 30px;
 }
 .text_con h1 {
@@ -78,11 +68,12 @@
   border: 1px solid #fe9344;
   color: #fff;
   transition: 0.3s ease-in-out;
+  opacity: 4;
 }
 .logIn:hover {
   color: #fe9344;
   border: 1px solid #fe9344;
-  background: white;
+  background: transparent;
 }
 .read {
   display: inline-block;
@@ -114,11 +105,6 @@
     margin-left: -20%;
   }
 }
-@media screen and (max-width: 1063px) {
-  .img {
-    width: 100%;
-  }
-}
 @media screen and (max-width: 869px) {
   .mini_con{
     width: 100%;
@@ -127,6 +113,9 @@
   background-size: cover;
   background-position: right;
   border-radius: 0;
+  }
+  .text_con{
+    background-color: rgba(255, 255, 255, 0.555);
   }
   .img_con{
    display: none;
@@ -153,5 +142,10 @@
   }
   .read{
     text-align: center;
+  }
+}
+@media screen and (max-width: 580px) {
+  .mini_con{
+    background-position: center;
   }
 }

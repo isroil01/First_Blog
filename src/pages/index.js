@@ -8,12 +8,7 @@ import Section from '../../components/section1/section'
 export default function Home() {
   return (
     <div className={classes.home}>
-    <div>
-      <Image
-        className={classes.img}
-        src={Half}
-        alt="half"
-      />
+    <div className={classes.inner_home}>
       <div className={classes.mini_con}>
         <div className={classes.text_con}>
           <h1>Welcome To My Blog</h1>
@@ -33,8 +28,8 @@ export default function Home() {
         </div>
         <div className={classes.img_con} />
       </div>
-      </div>
-      <Section />
     </div>
+      <Section />
+  </div>
   );
 }

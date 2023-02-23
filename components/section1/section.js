@@ -46,7 +46,8 @@ const Section = () => {
                     <Link className={classes.btn} href='/'>Read more</Link>
                  </div>
                  <div className={classes.date}>
-                  September 23, 2022
+                 <p>September 23, 2022</p>
+                  
                  </div>
                </div>
             )
