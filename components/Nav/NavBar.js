@@ -24,10 +24,10 @@ const NavBar = () => {
           <Link href={"/"}>Home</Link>
         </li>
         <li>
-          <Link href={"/"}>Add</Link>
+          <Link href={"/blog"}>Blog</Link>
         </li>
         <li>
-          <Link href={"/"}>About us</Link>
+          <Link href={"/about"}>About us</Link>
         </li>
       </ul>
       <Image className={classes.image} src={Avatar} width={120} height={60} alt="login" />

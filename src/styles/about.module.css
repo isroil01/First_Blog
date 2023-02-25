@@ -1,0 +1,23 @@
+.about{
+    width: 100%;
+}
+.mini_con{
+    display: flex;
+    background: url('../../public/img/bg6.webp');
+   background-position: cover;
+   background-position: center;
+    width: 100%;
+    height: 30vh;
+    justify-content: center;
+}
+.mini_con img{
+    position: relative;
+    top: 20vh;
+}.inner_text_con{
+    display: flex;
+    
+}
+.inner_text_con div{
+    margin: 1px;
+    text-align: center;
+}

@@ -7,7 +7,7 @@ import {AiFillLinkedin,AiFillFacebook,AiFillInstagram,AiFillGithub} from 'react-
 
 
 const Section = () => {
-    const DUMMY_DATA=[
+    const DUMMY_DATA = [
         {
             id: '1',
             title: 'Do You want to learn  JavaScript?',

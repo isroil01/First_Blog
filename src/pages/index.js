@@ -9,6 +9,7 @@ export default function Home() {
   return (
     <div className={classes.home}>
     <div className={classes.inner_home}>
+    <Image src={Half} alt='' width={800} height={750} />
       <div className={classes.mini_con}>
         <div className={classes.text_con}>
           <h1>Welcome To My Blog</h1>
