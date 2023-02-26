@@ -3,9 +3,12 @@ import classes from "../styles/Home.module.css";
 import Image from "next/image";
 import BackImage from "../../public/img/bg1.jpg";
 import Half from "../../public/img/half.jpg";
-import Section from '../../components/section1/section'
+import Section from '../../components/section1/section';
+import {useSession,signIn,signOut} from 'next-auth/react'
 
 export default function Home() {
+  const {data:session} = useSession()
+  
   return (
     <div className={classes.home}>
     <div className={classes.inner_home}>
