@@ -38,13 +38,14 @@ const NavBar = () => {
           <Link href={"/"}>Home</Link>
         </li>
         <li>
-          <Link href={"/blog"}>Blog</Link>
+          <Link href={"blog"}>Blog</Link>
         </li>
         <li>
-          <Link href={"/about"}>About us</Link>
+          <Link href={"about"}>About us</Link>
         </li>
       </ul>
       <div className={classes.nav_img}>
+      <ul>
         <li className={classes.li_img}>
           <Image
             className={classes.image}
@@ -59,8 +60,11 @@ const NavBar = () => {
                 Log Out
               </li>
             ) : (
-              <li>
-                <button onClick={() => signIn()}>Log In</button>
+              <li >
+              <button onClick={() => signIn()}>
+                Log In
+              </button>
+                
               </li>
             )}
             {user ? (
@@ -70,6 +74,7 @@ const NavBar = () => {
             ) : null}
           </ul>
         </li>
+        </ul>
       </div>
     </div>
   );

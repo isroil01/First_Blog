@@ -41,24 +41,23 @@
 .text_con h1 {
   margin-top: 90px;
   font-family:  Sans-serif;
-  font-size: 40px;
+  font-size: 3rem;
   line-height: 52px;
   font-weight: 800;
 }
 .text_con p {
   color: #2b2b2c;
+  font-size: 18px;
 }
 .btn_con {
   display: flex;
+
 }
-.btn_con a {
-  text-decoration: none;
-  margin: 20px;
-}
+
 .logIn {
-  background-color: #fe9344;
+  /* background-color: #fe9344;
   display: inline-block;
-  padding: 8px 40px;
+  padding: 8px 35px;
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
@@ -69,6 +68,18 @@
   color: #fff;
   transition: 0.3s ease-in-out;
   opacity: 4;
+  margin: 0 12px;
+  font-size: 18px; */
+  width: 130px;
+  font-size: 18px;
+  border: 1px solid #fe9344;
+  background-color: #fe9344;
+  color: white;
+  border-radius: 20px;
+  margin:  0 10px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  
 }
 .logIn:hover {
   color: #fe9344;
@@ -87,6 +98,7 @@
   color: #fe9344;
   border: 1px solid #fe9344;
   transition: 0.3s ease-in-out;
+  font-size: 18px;
 }
 .read:hover {
   color: white;
@@ -104,6 +116,9 @@
     position: absolute;
     margin-left: -20%;
   }
+  .image{
+    width: 800px;
+  }
 }
 @media screen and (max-width: 869px) {
   .inner_home img{
@@ -120,7 +135,7 @@
   border-radius: 0;
   }
   .text_con{
-    background-color: rgba(255, 255, 255, 0.843);
+    background-color: rgb(254, 254, 254);
   }
   .img_con{
    display: none;
@@ -132,23 +147,12 @@
   height: 200px;
     
   }
-}
-@media screen and (max-width: 869px){
   .btn_con{
-    display: flex;
-    flex-direction: column;
+   
   }
-  .btn_con a{
-    margin: 10px;
-  }
-  .logIn{
-    width: 100px;
-    text-align: center;
-  }
-  .read{
-    text-align: center;
-  }
+  
 }
+
 @media screen and (max-width: 580px) {
   .mini_con{
     background-position: center;
@@ -160,6 +164,15 @@
   height: 60vh;
  }
 }
-@media screen and (max-width: 414px) {
-  
+@media screen and (max-width: 470px) {
+  .text_con {
+    justify-content:flex-start;
+    
+  }
+  .text_con h1{
+    font-size: 2.5rem;
+  }
+  .text_con p{
+    font-size: 16px;
+  }
 }

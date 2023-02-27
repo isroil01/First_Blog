@@ -28,7 +28,7 @@
     list-style: none;
 }
 .nav ul li a{
-    font-size: 16px;
+    font-size: 18px;
     text-decoration: none;
      color: black;
 }
@@ -47,24 +47,36 @@
 .nav_img .mini_nav{
     position: absolute;
     display: none;
-    top: 6vh;
-    right: 125px;
+    flex-direction: column;
+    top: 7.5vh;
     background-color: rgb(243, 243, 243);
     box-shadow: 0 0 5px rgb(182, 182, 182);
-    width: 100px;
-    padding: 20px 0px;
-    flex-direction: column;
-    justify-content: center;
-    
-    align-items: center;
+    width: 95px;
+    margin-left: 15px;
 }
-.nav_img ul li .image:hover > .mini_nav{
+.nav_img ul li:hover > .mini_nav{
     display: flex;
 }
-.mini_nav li{
-    font-size: 16px;
+.mini_nav li{  
+    width: 100%;    
 }
-@media screen and (max-width: 569px) {
+.mini_nav li {
+    font-size: 16px;
+    cursor: pointer;
+    float: left;
+}
+.li_img{
+    width: 80px;
+    display: flex;
+    flex-direction: column;  
+    align-items: center;
+}
+.li_img img{
+    /* width: 100%;
+    height: 100%; */
+    object-fit: cover;
+}
+@media screen and (max-width: 646px) {
     .hamburger{
         display: block;
         text-align: center;
@@ -112,5 +124,31 @@
     }
     .nav ul li{
         font-size: 20px;
+    }
+}
+@media screen and (max-width: 750px) {
+    .nav_img{
+        
+        text-align: left;
+    }
+    .nav_img ul{
+        display: flex;
+        
+    }
+    .nav_img ul li{
+        margin-right: 50px;
+    }
+}
+@media screen and (max-width: 437px) {
+
+    .nav_img ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 80px;
+    }
+    .nav_img ul li .mini_nav{
+        margin-right: 12px;
+        width: 80px;
     }
 }

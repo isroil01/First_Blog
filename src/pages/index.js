@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <div className={classes.home}>
     <div className={classes.inner_home}>
-    <Image src={Half} alt='' width={800} height={750} />
+    <Image src={Half} alt='' width={950} height={750} className={classes.image} />
       <div className={classes.mini_con}>
         <div className={classes.text_con}>
           <h1>Welcome To My Blog</h1>
@@ -22,12 +22,12 @@ export default function Home() {
             <b>Web Developments</b> and <b>IT industry</b>{" "}
           </p>
           <div className={classes.btn_con}>
-          <Link className={classes.logIn} href={""}>
+          <button className={classes.logIn} >
             Log in
-          </Link>
-          <Link className={classes.read} href="">
+          </button>
+          <button className={classes.read} >
             Discover
-          </Link>
+          </button>
           </div>
         </div>
         <div className={classes.img_con} />
